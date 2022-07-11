@@ -1,0 +1,48 @@
+.bkg
+    width: 100%
+    padding: 50px 70px
+    display: flex
+    justify-content: center
+    align-items: center 
+    flex-direction: column
+
+    .title
+        color: #1B3764
+        font-size: 42px
+        position: relative
+
+        &::after
+           position: absolute 
+           content: ''
+           bottom: -30px
+           left: calc(50% - 25px)
+           height: 3px
+           width: 50px
+           background-color: #FFCA42
+
+    .companycards
+        width: 100%
+        margin-top: 70px
+        display: flex
+        justify-content: space-between
+
+@media screen and ( max-width: 768px)
+    .bkg
+        padding: 50px 0
+
+        &>.companycards
+            display: grid
+            grid-template-columns: repeat(2, 50%)
+            grid-row-gap: 10%
+            margin: 70px 0
+
+@media screen and ( max-width: 426px)
+    .bkg
+        padding: 50px 20px
+
+        &>.companycards
+            display: grid
+            grid-template-columns: repeat(1, 100%)
+            grid-row-gap: 10%
+            margin: 70px 0
+            margin-bottom: 300px

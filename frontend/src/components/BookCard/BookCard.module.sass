@@ -1,0 +1,71 @@
+.card
+    height: 400px
+    width: 45%
+    display: flex
+    align-items: center
+    flex-direction: row
+
+    &>img
+        height: 100%
+
+    &>.cardname
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-left: 20px
+
+        &>.bookname
+            font-size: 30px
+            color: #1B3764
+
+        &>.bookprice
+            font-size: 25px
+            color: #FFCA42
+            margin: 20px 0
+
+        &>p
+            font-size: 24px
+            color: #969AA0
+            line-height: 35px
+
+        &>.printedbook
+            position: relative
+            font-size: 24px
+            color: #1B3764
+            margin: 10px 0 10px 25px
+
+            &::after
+                position: absolute
+                content: ''
+                left: -25px
+                top: 30%
+                width: 12px
+                height: 12px
+                background-color: #FFCA42
+                border-radius: 20px
+
+@media screen and ( max-width: 768px)
+    .card
+        width: 100%
+
+@media screen and ( max-width: 426px)
+    .card
+        height: 300px
+
+        &>img
+            height: 70%
+        
+        &>.cardname
+
+            &>.bookname
+                font-size: 25px
+
+            &>.bookprice
+                font-size: 20px
+
+            &>p
+                font-size: 16px
+                line-height: 25px
+
+            &>.printedbook
+                font-size: 19px

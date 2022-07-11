@@ -1,0 +1,52 @@
+.bkg
+    background-color: #1B3764
+    width: 100%
+    padding: 50px 70px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .container
+        width: 35%
+
+        .containername
+            font-size: 42px
+            color: #fff
+            position: relative
+
+            &::after
+                position: absolute 
+                content: ''
+                bottom: -30px
+                left: 0
+                height: 3px
+                width: 50px
+                background-color: #FFCA42
+        
+        &>p
+            font-size: 21px
+            margin-top: 50px
+            line-height: 30px
+            color: #B4C7E7
+
+    &>img
+        height: 80%
+
+@media screen and ( max-width: 768px )
+    .bkg
+
+        &>img
+            width: 60%
+
+@media screen and ( max-width: 426px )
+    .bkg
+        height: 100%
+        padding: 50px 20px
+        flex-direction: column
+
+        .container
+            width: 100%
+
+        &>img
+            width: 80%
+    

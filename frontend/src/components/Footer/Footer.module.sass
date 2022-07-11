@@ -1,0 +1,198 @@
+.bkg
+    width: 100%
+    padding: 50px 70px
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    background-color: #1B3764
+
+    .sociallinkcontainer
+        margin-top: 20px
+        display: flex
+        align-items: center
+        flex-direction: row
+        
+        &>div
+            width: 40px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            border: 1px solid #FFCA42
+            color: #fff
+            margin-right: 10px
+            cursor: pointer
+            transition: background-color 0.5s ease
+
+            &:hover
+                background-color: #FFCA42
+    
+    .menulist
+        display: grid
+        grid-template-columns: repeat(3, 30%)
+        justify-content: space-between
+        width: 80%
+
+        .explore
+            color: white
+
+            &>div
+                margin-bottom: 20px
+                font-size: 24px
+
+            &>ul>li
+                list-style: none
+                margin-bottom: 10px
+                font-size: 16px
+                font-family: Inter
+                padding-left: 35px
+                color: #B4C7E7
+                white-space: nowrap
+                position: relative
+                cursor: pointer
+
+                &::before
+                    content: '•••'
+                    position: absolute 
+                    top: 0
+                    left: 0
+                    bottom: 0
+                    color: #FFCA42
+
+        .upages
+            color: white
+            height: 100%
+
+            &>div
+                margin-bottom: 20px
+                font-size: 24px
+
+            &>ul>li
+                list-style: none
+                margin-bottom: 10px
+                font-size: 16px
+                font-family: Inter
+                margin-left: 35px
+                color: #b4c7e7
+                white-space: nowrap
+                position: relative
+                cursor: pointer
+
+                &::before
+                    content: '•••'
+                    position: absolute 
+                    top: 0
+                    left: -35px
+                    bottom: 0
+                    color: #FFCA42
+
+        .contacts
+            color: #fff
+
+            &>.contactsname
+                margin-bottom: 20px
+                font-size: 24px
+
+            &>.info
+                font-size: 16px
+                height: 90%
+                color: #B4C7E7
+                font-family: Inter
+                
+                .address
+                    display: flex
+                    height: 100%
+                    align-items: stretch
+
+                    &>ul
+                        height: 100%
+                        margin-right: 28px
+                        display: flex
+                        flex-direction: column
+                        
+                    .addresstitle>li
+                        font-family: 'Times New Roman', Times, serif
+                        font-size: 18px
+                        list-style: none
+                        white-space: nowrap
+                        margin-bottom: auto
+
+
+                    .addressinfo>li
+                        list-style: none
+                        height: 100%
+                        align-items: stretch
+
+@media screen and ( max-width: 768px)
+    .bkg
+        flex-direction: column
+
+        &>.logo
+            display: flex
+            width: 100%
+            flex-direction: column
+            align-items: center
+
+            &>img
+                width: 20%
+
+            &>.sociallinkcontainer
+                margin-left: 10px
+                
+
+        &>.menulist
+            width:100%
+            display: grid
+            justify-content: center
+            margin: 50px auto
+            align-items: center
+            grid-template-columns: repeat(2, 50%)
+
+            &>.explore
+                display: flex
+                justify-content: center
+                flex-direction: column
+                align-items: center
+                grid-column-start: 1
+                grid-column-end: 2
+                grid-row-start: 0
+                grid-row-end: 1
+
+            &>.upages
+                display: flex
+                justify-content: center
+                flex-direction: column
+                align-items: center
+                grid-column-start: 2
+                grid-column-end: 3
+                grid-row-start: 0
+                grid-row-end: 1
+
+            &>.contacts
+                display: flex
+                justify-content: center
+                flex-direction: column
+                align-items: center
+                margin-top: 50px
+                grid-column-start: 1
+                grid-column-end: 3
+                grid-row-start: 1
+                grid-row-end: 1
+
+                &>.info>.address>.addresstitle>li
+                    margin-bottom: 10px
+
+                &>.info>.address>.addressinfo>li
+                    margin-bottom: 10px
+
+
+@media screen and (max-width: 426px)
+    .bkg
+        padding: 70px 20px
+
+        &>.logo>img
+            width: 30%
+
+        &>.menulist
+            align-items: center
+            margin: 50px auto

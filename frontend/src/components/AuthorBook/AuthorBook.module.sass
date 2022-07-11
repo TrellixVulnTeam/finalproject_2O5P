@@ -1,0 +1,40 @@
+.bkg
+    padding: 50px 70px
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    .containername
+        color: #1B3764
+        font-size: 42px
+        position: relative
+
+        &::after
+           position: absolute 
+           content: ''
+           bottom: -30px
+           left: calc(50% - 25px)
+           height: 3px
+           width: 50px
+           background-color: #FFCA42
+
+    .cardscontainer
+        margin-top: 50px
+        width: 100%
+        display: flex
+        justify-content: space-between
+
+        
+@media screen and (max-width: 768px)
+    .bkg
+
+        &>.cardscontainer
+            align-items: center
+            flex-direction: column
+        
+
+@media screen and ( max-width: 426px)
+    .bkg
+        padding: 50px 20px

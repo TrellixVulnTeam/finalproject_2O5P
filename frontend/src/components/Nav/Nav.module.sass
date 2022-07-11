@@ -1,0 +1,66 @@
+.bkg
+    display: flex
+    position: sticky
+    top: 0
+    z-index: 2
+    padding: 0 70px
+    width: 100%
+    height: 100px
+    justify-content: space-between
+    background-color: #1B3764
+    align-items: center
+    
+    img
+        margin-right: 30px
+
+    .sociallinkcontainer
+        display: flex
+        align-items: center
+        flex-direction: row
+        
+        &>div
+            width: 40px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: #fff
+            margin: 0 5px
+            cursor: pointer
+            transition: background-color 0.5s ease
+
+            &:hover
+                background-color: #FFCA42
+    .mobileburger
+        display: none
+
+    .menucontainer
+        display: flex
+        align-items: center
+        flex-direction: row
+        font-family: Inter
+
+        &>div
+            font-size: 17px
+            color: #fff
+            cursor: pointer
+            margin: 0 40px
+            transition: color 0.5s ease
+
+            &:hover
+                color: #FFCA42
+
+
+
+@media screen and (max-width: 768px)
+    .bkg>.menucontainer
+        display: none
+
+    .bkg>.mobileburger
+        display: flex
+        color: #fff
+
+@media screen and (max-width: 426px)
+    .bkg
+        padding: 0 20px
+    

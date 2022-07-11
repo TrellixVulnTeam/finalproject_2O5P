@@ -1,0 +1,38 @@
+.bkg
+    width: 100%
+    padding: 50px 70px
+    display: flex
+    justify-content: center
+    align-items: center 
+    flex-direction: column
+    background-color: #F4F8FF
+
+    .containername
+        color: #1B3764
+        font-size: 42px
+        position: relative
+
+        &::after
+           position: absolute 
+           content: ''
+           bottom: -30px
+           left: calc(50% - 25px)
+           height: 3px
+           width: 50px
+           background-color: #FFCA42
+
+    .container
+        margin-top: 70px
+        display: grid
+        grid-template-columns: repeat(3, 25%)
+        justify-content: space-between
+
+@media screen and ( max-width: 768px)
+    .bkg 
+        padding: 50px 20px 250px 20px
+
+        .container
+            grid-template-columns: repeat(1, 80%)
+            grid-row-gap: 5%
+            justify-content: center
+
